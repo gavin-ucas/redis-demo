@@ -97,7 +97,7 @@ public class RedisTestController {
             // 获取锁失败，等待重试
             try{
                 Thread.sleep(100);
-                testLock();
+                testLockByLua();
             }catch (InterruptedException e){
                 e.printStackTrace();
             }
